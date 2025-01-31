@@ -5,7 +5,7 @@ const ViewAttendance = () => {
   useEffect(() => {
     const fetchAttendance = async () => {
       try {
-        const res= await axios.get("http://localhost:3000/attendance");
+        const res= await axios.get("https://backend-lgzi.onrender.com/attendance");
         setAttendance(res.data)
       } catch (error) {
         console.error("Error fetching attendance:", error);

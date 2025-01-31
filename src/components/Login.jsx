@@ -11,7 +11,7 @@ const Login=()=>{
         console.log("Event triggered")
         try{
              
-        const req= await axios.post('http://localhost:3000/login',{
+        const req= await axios.post('https://backend-lgzi.onrender.com/login',{
             
             email:email,
            password: password

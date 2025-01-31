@@ -31,7 +31,7 @@ const MarkAttendance = () => {
     };
     const submitAttendance = async () => {
         try {
-            const res = await axios.post("http://localhost:3000/submit", { students });
+            const res = await axios.post("https://backend-lgzi.onrender.com/submit", { students });
             alert(res.data);
         } catch (err) {
             console.log(err);
